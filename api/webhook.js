@@ -9,7 +9,7 @@ const config = {
 
 const supabaseUrl = process.env.SUPABASE_URL;
 // แก้ไขให้ดึงคีย์จาก SUPABASE_KEY ที่เราตั้งไว้ล่าสุดใน Vercel
-const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_ANON_KEY; 
+const supabaseKey = process.env.SUPABASE_KEY || process.env.SUPABASE_KEY; 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 // สร้างฟังก์ชันส่งข้อความที่ปลอดภัย ไม่ว่าจะใช้ SDK เวอร์ชันไหนก็ตาม
